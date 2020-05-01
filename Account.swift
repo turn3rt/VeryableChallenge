@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import UIKit
 
 let JSON_URL_STRING = "https://veryable-public-assets.s3.us-east-2.amazonaws.com/veryable.json"
 
@@ -19,4 +20,19 @@ struct Account: Decodable {
     let account_type: String
     let account_name: String
     let desc: String
+}
+
+
+// MARK: - GLOBAL VARS
+let bankImgString = "baseline_account_balance_black_48pt_3x.png"
+
+
+
+// MARK: - GLOBAL EXTENSIONS
+extension UIImageView {
+  func setImageColor(color: UIColor) {
+    let templateImage = self.image?.withRenderingMode(.alwaysTemplate)
+    self.image = templateImage
+    self.tintColor = color
+  }
 }

@@ -19,13 +19,7 @@ class AccountsTVC: UITableViewController {
         self.tableView.backgroundColor = UIColor.vryBackground()
         
         fetchData()
-        
-        
-        //let yee = Account(id: 1, accType: "bd", accName: "yee", desc: "arfff")
-       // print(yee)
-        
-        
-        
+    
     }
 
     // MARK: - Table view data source
@@ -45,20 +39,20 @@ class AccountsTVC: UITableViewController {
         let cell = tableView.dequeueReusableCell(withIdentifier: "accountsCard", for: indexPath) as! AccountCell
         
         cell.backgroundColor = UIColor.vryBackground()
+        
+        cell.img.setImageColor(color: UIColor.vryBlue())
         cell.accType.text = parsedAccounts[indexPath.row].account_name
         cell.accName.text = parsedAccounts[indexPath.row].desc
-        
         
         switch parsedAccounts[indexPath.row].account_type {
         case "bank":
             cell.desc.text = "Bank Account: ACH - Same Day"
+            //cell.imageView?.image = UIImage(named: String)
         case "card":
             cell.desc.text = "Card: Instant"
         default:
             print("Error")
         }
-    
-        
         return cell
     }
     
@@ -108,17 +102,21 @@ class AccountsTVC: UITableViewController {
     }
     */
     
+    
+    
+    
+    
     // MARK: - Internal Veryables ;)
     var parsedAccounts = [Account]()
 
     // MARK: - Internal Functions
-    func fetchData() -> () {
-    
-        guard let jsonURL = URL(string: JSON_URL_STRING) else { return }
+    func fetchData() {
+        // https://www.youtube.com/watch?v=YY3bTxgxWss
         
+        guard let jsonURL = URL(string: JSON_URL_STRING) else { return }
         URLSession.shared.dataTask(with: jsonURL) { (data, response, err) in
-        //check Error
-        // check reponse sstatus
+        // check Error
+        // check reponse status
             guard let data = data else { return }
             
             do {
@@ -133,9 +131,7 @@ class AccountsTVC: UITableViewController {
             } catch let jsonErr {
                 print("Error Serializing JSON:", jsonErr)
             }
-
         }.resume()
     }
-    
 }
 
