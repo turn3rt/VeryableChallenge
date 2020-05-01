@@ -105,10 +105,10 @@
             </objects>
             <point key="canvasLocation" x="952.79999999999995" y="93.103448275862078"/>
         </scene>
-        <!--View Controller-->
+        <!--Account Details-->
         <scene sceneID="i3I-P5-xHD">
             <objects>
-                <viewController id="uax-CM-iyW" sceneMemberID="viewController">
+                <viewController id="uax-CM-iyW" customClass="AccountDetails" customModule="VeryableDemo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="QIp-15-k3j">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -130,6 +130,10 @@
                                 <state key="normal" title="DONE">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="doneClick:" destination="uax-CM-iyW" eventType="touchUpInside" id="1ep-fb-8FA"/>
+                                    <action selector="doneClick:" destination="XKW-LM-fw0" eventType="touchUpInside" id="3h9-me-nN6"/>
+                                </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="xFT-vn-vyg">
                                 <rect key="frame" x="16" y="228" width="343" height="44.333333333333314"/>
@@ -165,8 +169,14 @@
                     <navigationItem key="navigationItem" id="cxi-mB-xvy">
                         <barButtonItem key="backBarButtonItem" id="oSI-Bc-0Y6"/>
                     </navigationItem>
+                    <connections>
+                        <outlet property="accImg" destination="CtQ-9U-EEh" id="qr8-EU-nO4"/>
+                        <outlet property="accName" destination="yzo-2Q-wb4" id="DXT-Qb-tlV"/>
+                        <outlet property="accType" destination="PnG-70-K0S" id="IeL-0B-rOH"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3xz-8y-Kby" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="XKW-LM-fw0" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="1824.8" y="92.364532019704441"/>
         </scene>

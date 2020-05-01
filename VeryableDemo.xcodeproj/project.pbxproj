@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B348441A245C779500435B4C /* AccountDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3484419245C779500435B4C /* AccountDetails.swift */; };
 		B39741262457686D00512F54 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B39741252457686D00512F54 /* AppDelegate.swift */; };
 		B39741282457686D00512F54 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B39741272457686D00512F54 /* SceneDelegate.swift */; };
 		B397412D2457686D00512F54 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B397412B2457686D00512F54 /* Main.storyboard */; };
@@ -29,6 +30,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B3484419245C779500435B4C /* AccountDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountDetails.swift; sourceTree = "<group>"; };
 		B39741222457686D00512F54 /* VeryableDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VeryableDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B39741252457686D00512F54 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B39741272457686D00512F54 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -85,7 +87,7 @@
 				B39741252457686D00512F54 /* AppDelegate.swift */,
 				B39741272457686D00512F54 /* SceneDelegate.swift */,
 				B397412B2457686D00512F54 /* Main.storyboard */,
-				B3974151245770DC00512F54 /* TableViewControllers */,
+				B3974151245770DC00512F54 /* Controllers */,
 				B397412E2457686F00512F54 /* Assets.xcassets */,
 				B397413924576ECA00512F54 /* Assets */,
 				B39741522458A48F00512F54 /* Designables */,
@@ -135,12 +137,13 @@
 			path = card;
 			sourceTree = "<group>";
 		};
-		B3974151245770DC00512F54 /* TableViewControllers */ = {
+		B3974151245770DC00512F54 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
 				B397414F245770CC00512F54 /* Accounts.swift */,
+				B3484419245C779500435B4C /* AccountDetails.swift */,
 			);
-			path = TableViewControllers;
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 		B39741522458A48F00512F54 /* Designables */ = {
@@ -236,6 +239,7 @@
 			files = (
 				B39741582458A48F00512F54 /* UIButtonX.swift in Sources */,
 				B39741262457686D00512F54 /* AppDelegate.swift in Sources */,
+				B348441A245C779500435B4C /* AccountDetails.swift in Sources */,
 				B39741592458A48F00512F54 /* UILabelX.swift in Sources */,
 				B397415A2458A48F00512F54 /* UIImageViewX.swift in Sources */,
 				B39741282457686D00512F54 /* SceneDelegate.swift in Sources */,
