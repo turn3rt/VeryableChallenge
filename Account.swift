@@ -25,6 +25,7 @@ struct Account: Decodable {
 
 // MARK: - GLOBAL VARS
 let bankImgString = "baseline_account_balance_black_48pt_3x.png"
+let cardImgString = "baseline_credit_card_black_48pt_3x.png"
 
 
 

@@ -33,7 +33,6 @@ class AccountDetails: UIViewController {
         accType.textColor = UIColor.vryGreyDark()
         accName.textColor = UIColor.vryGrey()
         doneButton.backgroundColor = UIColor.vryBlue()
-        
         accImg.setImageColor(color: UIColor.vryBlue())
         
         

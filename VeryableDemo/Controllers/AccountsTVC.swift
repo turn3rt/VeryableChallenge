@@ -29,27 +29,28 @@ class AccountsTVC: UITableViewController {
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        print("total number of accounts: \(parsedAccounts.count)")
-        
         return parsedAccounts.count
     }
 
-    
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "accountsCard", for: indexPath) as! AccountCell
         
         cell.backgroundColor = UIColor.vryBackground()
         
-        cell.img.setImageColor(color: UIColor.vryBlue())
         cell.accType.text = parsedAccounts[indexPath.row].account_name
         cell.accName.text = parsedAccounts[indexPath.row].desc
         
         switch parsedAccounts[indexPath.row].account_type {
         case "bank":
             cell.desc.text = "Bank Account: ACH - Same Day"
-            //cell.imageView?.image = UIImage(named: String)
+            cell.img.image = UIImage(named: bankImgString)
+            cell.img.setImageColor(color: UIColor.vryBlue())
+
         case "card":
             cell.desc.text = "Card: Instant"
+            cell.img.image = UIImage(named: cardImgString)
+            cell.img.setImageColor(color: UIColor.vryBlue())
+            
         default:
             print("Error")
         }
