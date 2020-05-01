@@ -14,6 +14,8 @@ class Accounts: UITableViewController {
         super.viewDidLoad()
 
         self.navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: .plain, target: nil, action: nil)
+        self.tableView.backgroundColor = UIColor.vryBackground()
+        //self.navigationController?.navigationBar.backgroundColor = UIColor.white
 
     }
 
@@ -30,6 +32,8 @@ class Accounts: UITableViewController {
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "accountsCard", for: indexPath)
+        
+        cell.backgroundColor = UIColor.vryBackground()
 
         // Configure the cell...
 
