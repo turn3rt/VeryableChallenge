@@ -1,7 +1,7 @@
 # VeryableChallenge
 Code Challenge for Veryable LLC
 
-
+![](VeryableDemoGif.gif)
 
 ## Thought Processes
 I want to thank you for providing the starter project - it provided me with several ideas and files that allowed me to create this final product. But, I quickly realized that the starter project intended for candiates to create a programmatic UI. Indeed, there are two main ways to develop UI - storyboards or programmatic. In order to get this project in by Friday, May 1st I decided to create a storyboard based UI based on the wireframe design given in the project files. 
