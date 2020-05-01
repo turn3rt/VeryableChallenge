@@ -10,13 +10,13 @@
         <!--ACCOUNTS-->
         <scene sceneID="ICW-Uv-mMB">
             <objects>
-                <tableViewController id="bvO-5f-gir" customClass="Accounts" customModule="VeryableDemo" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="bvO-5f-gir" customClass="AccountsTVC" customModule="VeryableDemo" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="110" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="FcI-Kr-JtA">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="724"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="accountsCard" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="accountsCard" id="5Zc-eT-smz">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="accountsCard" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="accountsCard" id="5Zc-eT-smz" customClass="AccountCell" customModule="VeryableDemo" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="28" width="375" height="110"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="5Zc-eT-smz" id="yp7-vQ-rav">
@@ -99,6 +99,10 @@
                                 </tableViewCellContentView>
                                 <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                 <connections>
+                                    <outlet property="accName" destination="Klm-25-fYr" id="MsY-11-kiQ"/>
+                                    <outlet property="accType" destination="DPs-k9-Ba2" id="rdB-00-1sB"/>
+                                    <outlet property="desc" destination="Z3A-J1-RQI" id="NTY-Ox-hwm"/>
+                                    <outlet property="img" destination="W2y-BW-7fZ" id="HiI-We-iVf"/>
                                     <segue destination="uax-CM-iyW" kind="show" id="wB7-jD-25W"/>
                                 </connections>
                             </tableViewCell>

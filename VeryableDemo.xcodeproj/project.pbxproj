@@ -10,6 +10,8 @@
 		B348441A245C779500435B4C /* AccountDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3484419245C779500435B4C /* AccountDetails.swift */; };
 		B348441E245C82AC00435B4C /* UIColor+Veryable.swift in Sources */ = {isa = PBXBuildFile; fileRef = B348441C245C82AC00435B4C /* UIColor+Veryable.swift */; };
 		B348441F245C82AC00435B4C /* UIFont+Veryable.swift in Sources */ = {isa = PBXBuildFile; fileRef = B348441D245C82AC00435B4C /* UIFont+Veryable.swift */; };
+		B3484422245C946A00435B4C /* AccountCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3484421245C946A00435B4C /* AccountCell.swift */; };
+		B3484424245C949500435B4C /* Account.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3484423245C949500435B4C /* Account.swift */; };
 		B39741262457686D00512F54 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B39741252457686D00512F54 /* AppDelegate.swift */; };
 		B39741282457686D00512F54 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B39741272457686D00512F54 /* SceneDelegate.swift */; };
 		B397412D2457686D00512F54 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B397412B2457686D00512F54 /* Main.storyboard */; };
@@ -24,7 +26,7 @@
 		B397414C24576EDD00512F54 /* baseline_credit_card_black_48pt_1x.png in Resources */ = {isa = PBXBuildFile; fileRef = B397414324576EDD00512F54 /* baseline_credit_card_black_48pt_1x.png */; };
 		B397414D24576EDD00512F54 /* baseline_credit_card_black_48pt_3x.png in Resources */ = {isa = PBXBuildFile; fileRef = B397414424576EDD00512F54 /* baseline_credit_card_black_48pt_3x.png */; };
 		B397414E24576EDD00512F54 /* baseline_credit_card_black_48pt_2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B397414524576EDD00512F54 /* baseline_credit_card_black_48pt_2x.png */; };
-		B3974150245770CC00512F54 /* Accounts.swift in Sources */ = {isa = PBXBuildFile; fileRef = B397414F245770CC00512F54 /* Accounts.swift */; };
+		B3974150245770CC00512F54 /* AccountsTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B397414F245770CC00512F54 /* AccountsTVC.swift */; };
 		B39741582458A48F00512F54 /* UIButtonX.swift in Sources */ = {isa = PBXBuildFile; fileRef = B39741532458A48F00512F54 /* UIButtonX.swift */; };
 		B39741592458A48F00512F54 /* UILabelX.swift in Sources */ = {isa = PBXBuildFile; fileRef = B39741542458A48F00512F54 /* UILabelX.swift */; };
 		B397415A2458A48F00512F54 /* UIImageViewX.swift in Sources */ = {isa = PBXBuildFile; fileRef = B39741552458A48F00512F54 /* UIImageViewX.swift */; };
@@ -35,6 +37,8 @@
 		B3484419245C779500435B4C /* AccountDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountDetails.swift; sourceTree = "<group>"; };
 		B348441C245C82AC00435B4C /* UIColor+Veryable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Veryable.swift"; sourceTree = "<group>"; };
 		B348441D245C82AC00435B4C /* UIFont+Veryable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIFont+Veryable.swift"; sourceTree = "<group>"; };
+		B3484421245C946A00435B4C /* AccountCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountCell.swift; sourceTree = "<group>"; };
+		B3484423245C949500435B4C /* Account.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Account.swift; sourceTree = "<group>"; };
 		B39741222457686D00512F54 /* VeryableDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VeryableDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B39741252457686D00512F54 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B39741272457686D00512F54 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -51,7 +55,7 @@
 		B397414324576EDD00512F54 /* baseline_credit_card_black_48pt_1x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = baseline_credit_card_black_48pt_1x.png; sourceTree = "<group>"; };
 		B397414424576EDD00512F54 /* baseline_credit_card_black_48pt_3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = baseline_credit_card_black_48pt_3x.png; sourceTree = "<group>"; };
 		B397414524576EDD00512F54 /* baseline_credit_card_black_48pt_2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = baseline_credit_card_black_48pt_2x.png; sourceTree = "<group>"; };
-		B397414F245770CC00512F54 /* Accounts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Accounts.swift; sourceTree = "<group>"; };
+		B397414F245770CC00512F54 /* AccountsTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountsTVC.swift; sourceTree = "<group>"; };
 		B39741532458A48F00512F54 /* UIButtonX.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIButtonX.swift; sourceTree = "<group>"; };
 		B39741542458A48F00512F54 /* UILabelX.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UILabelX.swift; sourceTree = "<group>"; };
 		B39741552458A48F00512F54 /* UIImageViewX.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIImageViewX.swift; sourceTree = "<group>"; };
@@ -78,9 +82,18 @@
 			path = Extension;
 			sourceTree = "<group>";
 		};
+		B3484420245C944100435B4C /* Table View Cells */ = {
+			isa = PBXGroup;
+			children = (
+				B3484421245C946A00435B4C /* AccountCell.swift */,
+			);
+			path = "Table View Cells";
+			sourceTree = "<group>";
+		};
 		B39741192457686D00512F54 = {
 			isa = PBXGroup;
 			children = (
+				B3484423245C949500435B4C /* Account.swift */,
 				B39741242457686D00512F54 /* VeryableDemo */,
 				B39741232457686D00512F54 /* Products */,
 			);
@@ -100,6 +113,7 @@
 				B39741252457686D00512F54 /* AppDelegate.swift */,
 				B39741272457686D00512F54 /* SceneDelegate.swift */,
 				B397412B2457686D00512F54 /* Main.storyboard */,
+				B3484420245C944100435B4C /* Table View Cells */,
 				B3974151245770DC00512F54 /* Controllers */,
 				B397412E2457686F00512F54 /* Assets.xcassets */,
 				B397413924576ECA00512F54 /* Assets */,
@@ -154,7 +168,7 @@
 		B3974151245770DC00512F54 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				B397414F245770CC00512F54 /* Accounts.swift */,
+				B397414F245770CC00512F54 /* AccountsTVC.swift */,
 				B3484419245C779500435B4C /* AccountDetails.swift */,
 			);
 			path = Controllers;
@@ -256,10 +270,12 @@
 				B348441A245C779500435B4C /* AccountDetails.swift in Sources */,
 				B39741592458A48F00512F54 /* UILabelX.swift in Sources */,
 				B397415A2458A48F00512F54 /* UIImageViewX.swift in Sources */,
+				B3484424245C949500435B4C /* Account.swift in Sources */,
 				B39741282457686D00512F54 /* SceneDelegate.swift in Sources */,
 				B397415B2458A48F00512F54 /* UIViewX.swift in Sources */,
-				B3974150245770CC00512F54 /* Accounts.swift in Sources */,
+				B3974150245770CC00512F54 /* AccountsTVC.swift in Sources */,
 				B348441F245C82AC00435B4C /* UIFont+Veryable.swift in Sources */,
+				B3484422245C946A00435B4C /* AccountCell.swift in Sources */,
 				B348441E245C82AC00435B4C /* UIColor+Veryable.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

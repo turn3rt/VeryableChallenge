@@ -8,15 +8,24 @@
 
 import UIKit
 
-class Accounts: UITableViewController {
+class AccountsTVC: UITableViewController {
 
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         self.navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: .plain, target: nil, action: nil)
         self.tableView.backgroundColor = UIColor.vryBackground()
-        //self.navigationController?.navigationBar.backgroundColor = UIColor.white
-
+        
+        fetchData()
+        
+        
+        //let yee = Account(id: 1, accType: "bd", accName: "yee", desc: "arfff")
+       // print(yee)
+        
+        
+        
     }
 
     // MARK: - Table view data source
@@ -26,17 +35,30 @@ class Accounts: UITableViewController {
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 5
+        print("total number of accounts: \(parsedAccounts.count)")
+        
+        return parsedAccounts.count
     }
 
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "accountsCard", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "accountsCard", for: indexPath) as! AccountCell
         
         cell.backgroundColor = UIColor.vryBackground()
-
-        // Configure the cell...
-
+        cell.accType.text = parsedAccounts[indexPath.row].account_name
+        cell.accName.text = parsedAccounts[indexPath.row].desc
+        
+        
+        switch parsedAccounts[indexPath.row].account_type {
+        case "bank":
+            cell.desc.text = "Bank Account: ACH - Same Day"
+        case "card":
+            cell.desc.text = "Card: Instant"
+        default:
+            print("Error")
+        }
+    
+        
         return cell
     }
     
@@ -85,5 +107,35 @@ class Accounts: UITableViewController {
         // Pass the selected object to the new view controller.
     }
     */
+    
+    // MARK: - Internal Veryables ;)
+    var parsedAccounts = [Account]()
 
+    // MARK: - Internal Functions
+    func fetchData() -> () {
+    
+        guard let jsonURL = URL(string: JSON_URL_STRING) else { return }
+        
+        URLSession.shared.dataTask(with: jsonURL) { (data, response, err) in
+        //check Error
+        // check reponse sstatus
+            guard let data = data else { return }
+            
+            do {
+                // return array of account objects from backend
+                let accounts = try JSONDecoder().decode([Account].self, from: data)
+                self.parsedAccounts = accounts
+                
+                DispatchQueue.main.async {
+                    self.tableView.reloadData()
+                }
+        
+            } catch let jsonErr {
+                print("Error Serializing JSON:", jsonErr)
+            }
+
+        }.resume()
+    }
+    
 }
+
