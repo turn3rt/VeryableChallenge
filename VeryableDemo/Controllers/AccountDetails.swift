@@ -16,6 +16,7 @@ class AccountDetails: UIViewController {
     @IBOutlet weak var accType: UILabel!
     @IBOutlet weak var accName: UILabel!
 
+    @IBOutlet weak var doneButton: UIButtonX!
     
 
     
@@ -29,7 +30,11 @@ class AccountDetails: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        accType.textColor = UIColor.vryGreyDark()
+        accName.textColor = UIColor.vryGrey()
+        doneButton.backgroundColor = UIColor.vryBlue()
+        
+        
     }
     
 
