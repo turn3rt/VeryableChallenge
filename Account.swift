@@ -16,10 +16,17 @@ let JSON_URL_STRING = "https://veryable-public-assets.s3.us-east-2.amazonaws.com
 // https://www.youtube.com/watch?v=YY3bTxgxWss
 
 struct Account: Decodable {
-    let id: Int
-    let account_type: String
-    let account_name: String
-    let desc: String
+    let id: Int?
+    let account_type: String?
+    let account_name: String?
+    let desc: String?
+    
+//    init(id: Int, account_type: String, account_name: String, desc: String) {
+//        self.id = id
+//        self.account_type = account_type
+//        self.account_name = account_name
+//        self.desc = desc
+//    }
 }
 
 
