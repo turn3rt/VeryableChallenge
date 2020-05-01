@@ -12,6 +12,7 @@
 		B348441F245C82AC00435B4C /* UIFont+Veryable.swift in Sources */ = {isa = PBXBuildFile; fileRef = B348441D245C82AC00435B4C /* UIFont+Veryable.swift */; };
 		B3484422245C946A00435B4C /* AccountCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3484421245C946A00435B4C /* AccountCell.swift */; };
 		B3484424245C949500435B4C /* Account.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3484423245C949500435B4C /* Account.swift */; };
+		B3484426245CD5D100435B4C /* VeryableDemoGif.gif in Resources */ = {isa = PBXBuildFile; fileRef = B3484425245CD5D000435B4C /* VeryableDemoGif.gif */; };
 		B39741262457686D00512F54 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B39741252457686D00512F54 /* AppDelegate.swift */; };
 		B39741282457686D00512F54 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B39741272457686D00512F54 /* SceneDelegate.swift */; };
 		B397412D2457686D00512F54 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B397412B2457686D00512F54 /* Main.storyboard */; };
@@ -39,6 +40,7 @@
 		B348441D245C82AC00435B4C /* UIFont+Veryable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIFont+Veryable.swift"; sourceTree = "<group>"; };
 		B3484421245C946A00435B4C /* AccountCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountCell.swift; sourceTree = "<group>"; };
 		B3484423245C949500435B4C /* Account.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Account.swift; sourceTree = "<group>"; };
+		B3484425245CD5D000435B4C /* VeryableDemoGif.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = VeryableDemoGif.gif; sourceTree = "<group>"; };
 		B39741222457686D00512F54 /* VeryableDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VeryableDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B39741252457686D00512F54 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B39741272457686D00512F54 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -95,6 +97,7 @@
 			children = (
 				B3484423245C949500435B4C /* Account.swift */,
 				B39741242457686D00512F54 /* VeryableDemo */,
+				B3484425245CD5D000435B4C /* VeryableDemoGif.gif */,
 				B39741232457686D00512F54 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -252,6 +255,7 @@
 				B397414D24576EDD00512F54 /* baseline_credit_card_black_48pt_3x.png in Resources */,
 				B397414A24576EDD00512F54 /* baseline_chevron_right_black_48pt_3x.png in Resources */,
 				B397414B24576EDD00512F54 /* baseline_chevron_right_black_48pt_2x.png in Resources */,
+				B3484426245CD5D100435B4C /* VeryableDemoGif.gif in Resources */,
 				B397414924576EDD00512F54 /* baseline_chevron_right_black_48pt_1x.png in Resources */,
 				B397412D2457686D00512F54 /* Main.storyboard in Resources */,
 				B397414724576EDD00512F54 /* baseline_account_balance_black_48pt_2x.png in Resources */,
@@ -423,6 +427,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 37NWD4XUMT;
 				INFOPLIST_FILE = VeryableDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -441,6 +446,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 37NWD4XUMT;
 				INFOPLIST_FILE = VeryableDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
