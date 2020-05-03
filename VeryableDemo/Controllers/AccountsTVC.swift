@@ -63,7 +63,7 @@ class AccountsTVC: UITableViewController {
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let vc = storyboard?.instantiateViewController(identifier: "AccountDetailsVC") as? AccountDetails
         vc?.account = parsedAccounts[indexPath.row]
-        print("data pass with indexpath.row = \(indexPath.row) and account: \(parsedAccounts[indexPath.row])")
+        // print("data pass with indexpath.row = \(indexPath.row) and account: \(parsedAccounts[indexPath.row])")
         self.navigationController?.pushViewController(vc!, animated: true)
     }
 
@@ -77,8 +77,8 @@ class AccountsTVC: UITableViewController {
         
         guard let jsonURL = URL(string: JSON_URL_STRING) else { return }
         URLSession.shared.dataTask(with: jsonURL) { (data, response, err) in
-        // check Error
-        // check reponse status
+        // TODO: check Error
+        // TODO: check Reponse status
             guard let data = data else { return }
             
             do {
