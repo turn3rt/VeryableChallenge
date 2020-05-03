@@ -67,17 +67,6 @@ class AccountsTVC: UITableViewController {
         self.navigationController?.pushViewController(vc!, animated: true)
     }
 
-
-    
-    // MARK: - Navigation
-
-//    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-//
-//        if segue.identifier == "passAcc" {
-//            let vc = segue.destination as? AccountDetails
-//            vc?.account = accToPass
-//        }
-//    }
     
     // MARK: - Internal Veryables ;)
     var parsedAccounts = [Account]()

@@ -13,9 +13,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
 
-    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
-        
+    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {        
         // Change Nav Bar title attributes to match style provided in wireframe
         UINavigationBar.appearance().titleTextAttributes = [
             NSAttributedString.Key.font: UIFont(name: "AvenirNext-Regular", size: 20)!,
